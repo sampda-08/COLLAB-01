@@ -1,0 +1,64 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Login / Sign Up</h1>
+    <form action="/login" method="post" id="authForm">
+      <div class="radio-group">
+        <input type="radio" id="login" name="option" value="login" required>
+        <label for="login">Login</label><br>
+        <input type="radio" id="signup" name="option" value="signup">
+        <label for="signup">Sign up</label><br>
+      </div>
+      <!-- Common Fields -->
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+      </div>
+
+
+      <!-- Sign Up Fields -->
+      <div id="signupFields" class="form-group hidden">
+        <input type="text" name="name" placeholder="Full Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="tel" name="phone" placeholder="Phone Number"><br>
+        <input type="text" name="address" placeholder="Address"><br>
+      </div>
+
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const loginRadio = document.getElementById('login');
+    const signupRadio = document.getElementById('signup');
+    const signupFields = document.getElementById('signupFields');
+
+    // Toggle visibility of sign-up fields based on selected option
+    loginRadio.addEventListener('change', () => {
+      signupFields.classList.add('hidden');
+    });
+
+    signupRadio.addEventListener('change', () => {
+      signupFields.classList.remove('hidden');
+    });
+  </script>
+
+
+</body>
+
+</html>

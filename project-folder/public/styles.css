@@ -1,0 +1,267 @@
+/* public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* New styles for additional elements */
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f4f4f9;
+  color: #666;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 14px;
+  }
+}
+
+/* Styles for Sign-Up Fields */
+#signupFields {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#signupFields input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#signupFields input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  background-image: url('back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+header {
+  background-color: #1E293B;
+  color: white;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.3rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #cceeff;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-box {
+  background: #3b839b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #1E293B;
+  color: white;
+  padding: 0px;
+}

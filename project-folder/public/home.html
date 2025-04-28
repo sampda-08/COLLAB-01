@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Lhonak Lake Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">🌊 CryoWatch</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Sign In</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to the South Lhonak Lake Flood Monitoring System</h1>
+      <p>Stay informed about real-time flood predictions and lake activity.</p>
+    </section>
+
+    <section class="features">
+      <section class="features">
+        <!-- <div class="feature-box">
+          <img src="assets/realmoniroring.png" alt="Live Monitoring" class="feature-image" />
+          <h3>Live Monitoring</h3>
+          <p>Real-time flood risk based on environmental sensors.</p>
+        </div> -->
+        <div class="feature-box" onclick="openStreamlit()">
+          <img src="assets/mlmodel.png" alt="ML Predictions" class="feature-image" />
+          <h3>ML Predictions</h3>
+          <p>Powered by machine learning to alert you early.</p>
+        </div>
+        <!-- <div class="feature-box">
+          <img src="assets/alert.png" alt="Emergency Info" class="feature-image" />
+          <h3>Emergency Info</h3>
+          <p>Quick access for authorities and responders.</p>
+        </div> -->
+      </section>
+
+
+      <script>
+        function openStreamlit() {
+          window.open('http://localhost:8501', '_blank');
+        }
+      </script>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 South Lhonak Monitoring System. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

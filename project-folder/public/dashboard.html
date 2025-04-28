@@ -1,0 +1,59 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">🌊 CryoWatch</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to the South Lhonak Lake Flood Monitoring System</h1>
+      <p>Stay informed about real-time flood predictions and lake activity.</p>
+    </section>
+
+    <section class="features">
+      <section class="features">
+        <div class="feature-box" onclick="openStreamlit()">
+          <img src="mlmodel.png" alt="ML Predictions" class="feature-image" />
+          <h3 style="color:white">ML Predictions</h3>
+          <p style="color:white">Powered by machine learning to alert you early.</p>
+        </div>
+
+      </section>
+
+
+      <script>
+        function openStreamlit() {
+          window.open('http://localhost:8501', '_blank');
+        }
+      </script>
+    </section>
+  </main>
+
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
